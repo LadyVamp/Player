@@ -138,19 +138,14 @@ section {
     height: 100%;
     border-radius: 25px;
 }
+      } /*This bracket is not remove, otherwise the table looks wrong*/
 
- /*Drag and drop*/
+#sort tr {
+background:#DEE3E7;
+border:0;
+}
 
- #sortable  { 
-          list-style-type:none;
-          margin:0;
-          padding:0;
-      /*    width:290px; */
-      }
-
-  #sortable td {
-      margin-bottom:3px;
-      padding:10px; 
-      font-size:20px;
-      height:22px; 
-  } 
+#sort th {
+background:#EEC3C7;
+border:0;
+}

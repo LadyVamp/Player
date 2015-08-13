@@ -28,9 +28,9 @@
 
 
 <div style="clear: both;"></div>
-<div style="margin-top: 140px;position: relative;top:150px; margin-left: 400px;">
+<div style="margin-top: 140px;position: relative;top:150px; ">
 
-<table class="table" align="center" id="sortable" >
+<table class="table" align="center" id="sort" >
 
     <tr >
         <td>
@@ -67,14 +67,40 @@
 </table>
 </div>
 
- <script type="text/javascript">
-  $(document).ready(function(){
+<!---script type="text/javascript">
+//   $(document).ready(function(){
 
-     $("#sortable").sortable();
-     $("#sortable").disableSelection();
-  });
+//      $("#sortable").sortable();
+//      $("#sortable").disableSelection();
+//   });
+// </script-->
+
+
+
+
+<script type="text/javascript">
+
+var fixHelper = function(e, ui) {
+
+    ui.children().each(function() {
+
+        $(this).width($(this).width());
+
+    });
+
+    return ui;
+
+};
+
+ 
+
+$("#sort tbody").sortable({
+
+    helper: fixHelper
+
+}).disableSelection();
+
 </script>
-
 <script src='js/jquery-2.1.4.min.js'></script>
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
 <script src='js/jquery.media/source/jquery.media.js'></script>
