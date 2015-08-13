@@ -6,6 +6,13 @@
     <title>Плеер</title>
 	<link href="css/style.css" rel="stylesheet" media="all" />
 	 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Drag and drop -->
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
 	</head>
 	
 <body>
@@ -21,9 +28,11 @@
 
 
 <div style="clear: both;"></div>
-<div style="margin-top: 140px;position: relative;top:150px;">
-<table class="table" align="center">
-    <tr style="margin-top: 50px;">
+<div style="margin-top: 140px;position: relative;top:150px; margin-left: 400px;">
+
+<table class="table" align="center" id="sortable" >
+
+    <tr >
         <td>
             <a href="javascript:void(0)" class="play_track track" data-track="1.mp3"></a>
         </td>
@@ -33,8 +42,8 @@
         <td style="padding-left: 10px;font-weight: bold;" class="time">
         </td>
     </tr>
-    <tr style="margin-top: 50px;">
-        <td>
+    <tr >
+        <td >
             <a href="javascript:void(0)" class="play_track track" data-track="2.mp3"></a>
         </td>
         <td>
@@ -44,7 +53,7 @@
         </td>
     </tr>
 
-    <tr style="margin-top: 50px;">
+    <tr >
         <td>
             <a href="javascript:void(0)" class="play_track track" data-track="3.mp3"></a>
         </td>
@@ -56,16 +65,20 @@
     </tr>
 
 </table>
-
 </div>
 
+ <script type="text/javascript">
+  $(document).ready(function(){
 
+     $("#sortable").sortable();
+     $("#sortable").disableSelection();
+  });
+</script>
 
 <script src='js/jquery-2.1.4.min.js'></script>
 <script src="js/jquery-ui/jquery-ui.min.js"></script>
 <script src='js/jquery.media/source/jquery.media.js'></script>
 <script src="js/audio.js"></script>
-
 
 </body>
 </html>	
