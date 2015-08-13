@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content='width=1024' name='viewport'>
+    <title>Плеер</title>
+	<link href="css/style.css" rel="stylesheet" media="all" />
+	
+	</head>
+	
+<body>
+
+<audio id="audio" style="display: none;" src="tracks/1.mp3"></audio>
+
+<section>
+    <span class="play player" style="cursor: pointer;"></span>
+    <span class="tooltip"></span> <!-- Tooltip -->
+    <div id="slider"></div> <!-- the Slider -->
+    <span class="volume"></span> <!-- Volume -->
+</section>
+
+
+<div style="clear: both;"></div>
+<div style="margin-top: 140px;position: relative;top:150px;">
+<table class="table" align="center">
+    <tr style="margin-top: 50px;">
+        <td>
+            <a href="javascript:void(0)" class="play_track track" data-track="1.mp3"></a>
+        </td>
+        <td>
+            Andru Donalds - Simple Obsession
+        </td>
+        <td style="padding-left: 10px;font-weight: bold;" class="time">
+        </td>
+    </tr>
+    <tr style="margin-top: 50px;">
+        <td>
+            <a href="javascript:void(0)" class="play_track track" data-track="2.mp3"></a>
+        </td>
+        <td>
+           Enigma - Center Of The Sun (Vocals By Sandra)
+        </td>
+        <td style="padding-left: 10px;font-weight: bold;" class="time">
+        </td>
+    </tr>
+
+    <tr style="margin-top: 50px;">
+        <td>
+            <a href="javascript:void(0)" class="play_track track" data-track="3.mp3"></a>
+        </td>
+        <td>
+            Сплин - Весь Этот Бред
+        </td>
+        <td style="padding-left: 10px;font-weight: bold;" class="time">
+        </td>
+    </tr>
+
+</table>
+
+</div>
+
+
+
+<script src='js/jquery-2.1.4.min.js'></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src='js/jquery.media/source/jquery.media.js'></script>
+<script src="js/audio.js"></script>
+
+
+</body>
+</html>	
